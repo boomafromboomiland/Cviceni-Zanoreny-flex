@@ -9,9 +9,39 @@ body {
 	padding: 20px;
 }
 
-.levy  { background-color: #f1c40f;}
-.horni { background-color: #2ecc71;}
-.dolni { background-color: #e74c3c;}
+.levy  {
+	background-color: #f1c40f;
+	width: 50%;
+}
+.horni {
+	background-color: #2ecc71;
+	flex-grow: 1;
+}
+.dolni {
+	background-color: #e74c3c;
+	flex-grow: 1;
+}
 
 /* ------------- pod čáru přijdou tvé styly ------------- */
 
+.kontejner {
+	display: flex;
+	flex-direction: row;
+}
+
+.column {
+	flex-direction: column;
+	display: flex;
+}
+/*.horni,
+.dolni {
+	height: 50%;
+	flex-basis: 50%;
+}*/
+
+.horni,
+.dolni,
+.column,
+.levy {
+	flex-basis: 50%;
+}
